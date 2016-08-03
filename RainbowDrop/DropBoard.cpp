@@ -75,7 +75,9 @@ DropBoard::DropBoard() {
 
 }
 
-BitBoard::BitBoard(DropColors (&Board)[BOARD_HEIGHT][BOARD_WIDTH], DropColors Color ) {
+//template<typename T, size_t M, size_t N>
+template<size_t M, size_t N>
+BitBoard::BitBoard(DropColors (&Board)[M][N], DropColors Color ) {
 	m_value = 0;
 	int i = 0;
 	int j = 0;

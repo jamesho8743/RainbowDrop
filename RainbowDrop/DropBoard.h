@@ -15,7 +15,8 @@ class BitBoard {
 
 public:
 	BitBoardType getValue() { return m_value; }
-	BitBoard(DropColors (&)[BOARD_HEIGHT][BOARD_WIDTH], DropColors);
+	template<size_t M, size_t N>
+	BitBoard(DropColors (&)[M][N], DropColors);
 
 };
 
